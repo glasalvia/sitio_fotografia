@@ -11,8 +11,13 @@ Se recomienda trabajar con virtualenv para hacer el deploy del proyecto
 Sobre una terminal(tener en cuenta las variables de entorno)
 
 -- pip install virtualenv
+
 -- virtualenv nombredelambiente
+
 -- \nombredelambiente\scripts\activate
+
+Python: 3.6
+
 
 # Dependencias
 
@@ -26,9 +31,12 @@ Para instalar las dependencias:
 
 pip install -r requirements.txt
 
+
+
 # Settings
 
 Setear la conexion a la base de datos sobre la etiqueta "DATABASES"
+
 
 
 # Ejecucion
