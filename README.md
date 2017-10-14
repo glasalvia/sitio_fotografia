@@ -5,7 +5,7 @@ Portal para publicar y promocionar trabajos fotograficos
 # Instrucciones
 
 
-1. Entorno
+# Entorno
 
 Se recomienda trabajar con virtualenv para hacer el deploy del proyecto
 
@@ -15,7 +15,7 @@ Sobre una terminal(tener en cuenta las variables de entorno)
 -- virtualenv nombredelambiente
 -- \nombredelambiente\scripts\activate
 
-2. Dependencias
+# Dependencias
 
 Django==1.11.6
 PyMySQL==0.7.11
@@ -25,12 +25,12 @@ Para instalar las dependencias:
 
 pip install -r requirements.txt
 
-3. Settings
+# Settings
 
 Setear la conexion a la base de datos sobre la etiqueta "DATABASES"
 
 
-4. Ejecucion
+# Ejecucion
 
 -- python manage.py runserver
 
