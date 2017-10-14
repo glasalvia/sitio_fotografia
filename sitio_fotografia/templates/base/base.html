@@ -1,0 +1,51 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fiorella Giunti Fotografia</title>
+	<meta name="description" content="A photography-inspired website layout with an expanding stack slider and a background image tilt effect" />
+	<meta name="keywords" content="photography, template, layout, effect, expand, image stack, animation, flickity, tilt" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/flickity.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="hero">
+			<div class="hero__back hero__back--static"></div>
+			<div class="hero__back hero__back--mover"></div>
+			<div class="hero__front"></div>
+		</div>
+		<header class="codrops-header">
+			<div class="codrops-links">
+				<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/InteractiveColoringConcept/" title="Previous Demo"><span>Previous Demo</span></a>
+				<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=23446" title="Back to the article"><span>Back to the Codrops article</span></a>
+			</div>
+			<h1 class="codrops-title">Fiorella Giunti <span>Fotografia</span></h1>
+			<nav class="menu">
+				<a class="menu__item" href="#"><span>Sobre mi</span></a>
+				<a class="menu__item menu__item--current" href="#"><span>Trabajos</span></a>
+				<a class="menu__item" href="#"><span>Contacto</span></a>
+			</nav>
+		</header>
+		
+
+
+
+		<!-- /stacks -->
+		
+	</div>
+	<!-- /container -->
+	<!-- Flickity v1.0.0 http://flickity.metafizzy.co/ -->
+	<script src="{% static 'js/lickity.pkgd.min.js' %}"></script>
+	<script src="{% static 'js/smoothscroll.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
