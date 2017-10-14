@@ -2,7 +2,6 @@
 Portal para publicar y promocionar trabajos fotograficos
 
 
-# Instrucciones
 
 
 # Entorno
