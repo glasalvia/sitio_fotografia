@@ -3,3 +3,9 @@ sitio_fotografia/sitio_fotografia/__pycache__/settings.cpython-36.pyc
 sitio_fotografia/portal/__init__.py
 sitio_fotografia/sitio_fotografia/__pycache__/urls.cpython-36.pyc
 sitio_fotografia/sitio_fotografia/__pycache__/__init__.cpython-36.pyc
+sitio_fotografia/apps/portal/__pycache__/views.cpython-36.pyc
+sitio_fotografia/apps/portal/__pycache__/models.cpython-36.pyc
+sitio_fotografia/apps/portal/__pycache__/__init__.cpython-36.pyc
+sitio_fotografia/apps/portal/__pycache__/admin.cpython-36.pyc
+sitio_fotografia/apps/portal/__pycache__/urls.cpython-36.pyc
+sitio_fotografia/apps/portal/migrations/__pycache__/__init__.cpython-36.pyc
