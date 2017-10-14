@@ -17,7 +17,9 @@ Sobre una terminal(tener en cuenta las variables de entorno)
 # Dependencias
 
 Django==1.11.6
+
 PyMySQL==0.7.11
+
 pytz==2017.2
 
 Para instalar las dependencias:
