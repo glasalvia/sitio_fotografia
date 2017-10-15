@@ -1,20 +1,23 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Fiorella Giunti Fotografia</title>
 	<meta name="description" content="Sitio de fotografia de Fiorella Carolina Giunti" />
-	<meta name="keywords" content="photography, template, layout, effect, expand, image stack, animation, flickity, tilt" />
-	<meta name="author" content="glasalvia" />
+	<meta name="keywords" content="photography, template, layout, effect, expand, image stack, animation, flickity, tilt, Fotografia, eventos, Fiorella, Giunti, imagenes" />
+	<meta name="author" content="glasalviacalio@gmail.com" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}"/>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/flickity.css' %}"/>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/sitio.css' %}"/>
 	<script src="{% static 'js/modernizr.custom.js' %}"></script>
+	
+
 </head>
 <body>
 	<div class="container">
@@ -26,14 +29,27 @@
 		
 		 {% block navbar %}
 		<header class="codrops-header">
+
+
 			<div class="codrops-links">
-				<a class="codrops-icon codrops-icon--prev" href="{% url 'index' %}" title="Previous Demo"><span>Volver a la Home</span></a>
-				<a class="codrops-icon codrops-icon--drop" href="{% url 'index' %}" title="Back to the article"><span>Volver a la Home</span></a>
+				<div class="row">
+				     <div class="col-md-12">
+
+						<a href="https://www.facebook.com/fiorellagiuntifotografia/" target="_blank" class="btn-social btn-facebook">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/fiorellagiuntifotografia/" target="_blank" class="btn-social btn-instagram"> 
+							<i class="fa fa-instagram"></i>
+						</a>
+
+					 </div> 
+				</div>
 			</div>
+
 			<h1 class="codrops-title">Fiorella Giunti <span>Fotografia</span></h1>
 			<nav class="menu">
-				<a class="menu__item" href="{% url 'sobre_mi' %}"><span>Sobre mi</span></a>
-				<a class="menu__item menu__item--current" href="{% url 'index' %}"><span>Trabajos</span></a>
+				<!-- <a class="menu__item" href="{% url 'sobre_mi' %}"><span>Sobre mi</span></a> -->
+				<a class="menu__item" href="{% url 'index' %}"><span>Trabajos</span></a>
 				<a class="menu__item" href="{% url 'contacto' %}"><span>Contacto</span></a>
 			</nav>
 		</header>
@@ -47,7 +63,7 @@
 	</div>
 	<!-- /container -->
 
-	<!-- <img class="loader" src="{% static 'img/three-dots.svg' %}" width="60" alt="Loader image" /> -->
+	<!-- <img class="loader" src="{% static 'img/three-dots.svg' %}" width="60" alt="Loader image" />-->
 	<script src="{% static 'js/flickity.pkgd.min.js' %}"></script>
 	<script src="{% static 'js/smoothscroll.js' %}"></script>
 	<script src="{% static 'js/main.js' %}"></script>
