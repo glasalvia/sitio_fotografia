@@ -4,5 +4,5 @@ from django.http import HttpResponse
 
 
 def index_portal(request):
-	return render(request, 'base/base.html')
+	return render(request, 'portal/index.html')
 
