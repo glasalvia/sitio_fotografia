@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}"/>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/flickity.css' %}"/>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
-	<script src="js/modernizr.custom.js"></script>
+	<script src="{% static 'js/modernizr.custom.js' %}"></script>
 </head>
 <body>
 	<div class="container">
@@ -37,14 +37,17 @@
 		</header>
 		
 
-
+		{% block content %}
+		{% endblock %}
 
 		<!-- /stacks -->
 		
 	</div>
 	<!-- /container -->
 	<!-- Flickity v1.0.0 http://flickity.metafizzy.co/ -->
-	<script src="{% static 'js/lickity.pkgd.min.js' %}"></script>
+
+	<img class="loader" src="{% static 'img/three-dots.svg' %}" width="60" alt="Loader image" />
+	<script src="{% static 'js/flickity.pkgd.min.js' %}"></script>
 	<script src="{% static 'js/smoothscroll.js' %}"></script>
 	<script src="{% static 'js/main.js' %}"></script>
 </body>
