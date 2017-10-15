@@ -5,321 +5,98 @@
 <div class="stack-slider">
 	<div class="stacks-wrapper">
 		<div class="stack">
-			<h2 class="stack-title"><a href="#" data-text="Portraits"><span>Eventos</span></a></h2>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type1/1.jpg" alt="img01" />
-					<h3 class="item__title">Hoodie stumptown kitsch <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
+			<h2 class="stack-title"><a href="#" data-text="Eventos"><span>Eventos</span></a></h2>
+
+			{% for evento in Eventos %}
+				<div class="item">
+					<div class="item__content">
+						<img src=" {{ evento.archivo }} " alt="img01" />
+						<h3 class="item__title">{{ evento.titulo }}<span class="item__date">{{ evento.fecha_subida }}</span></h3>
+						<div class="item__details">
+							<ul>
+								<li><i class="icon icon-camera"></i><span>{{ evento.Modelo }}</span></li>
+								<li><i class="icon icon-focal_length"></i><span>{{ evento.Lente }}</span></li>
+								<li><i class="icon icon-aperture"></i><span>{{ evento.Apertura }}</span></li>
+								<li><i class="icon icon-exposure_time"></i><span>{{ evento.Velocidad }}</span></li>
+								<li><i class="icon icon-iso"></i><span>{{ evento.Iso }}</span></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type1/2.jpg" alt="img02" />
-					<h3 class="item__title">Retro irony sartorial <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type1/3.jpg" alt="img03" />
-					<h3 class="item__title">Stumptown Brooklyn <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type1/4.jpg" alt="img04" />
-					<h3 class="item__title">Blog dreamcatcher squid  <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type1/5.jpg" alt="img05" />
-					<h3 class="item__title">Meditation pickled mumblecore <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-					<p>Images by <a href="https://www.flickr.com/photos/martinaphotography/">martinak15</a></p>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
+
+
 		<div class="stack">
-			<h2 class="stack-title"><a href="#" data-text="Landscape"><span>Books</span></a></h2>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type3/1.jpg" alt="img01" />
-					<h3 class="item__title">Austin flannel salvia <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
+			<h2 class="stack-title"><a href="#" data-text="Books"><span>Books</span></a></h2>
+
+			{% for book in Books %}
+
+				<div class="item">
+					<div class="item__content">
+						<img src=" {{ book.archivo }} " alt="img01" />
+						<h3 class="item__title">{{ book.titulo }}<span class="item__date">{{ book.fecha_subida }}</span></h3>
+						<div class="item__details">
+							<ul>
+								<li><i class="icon icon-camera"></i><span>{{ book.Modelo }}</span></li>
+								<li><i class="icon icon-focal_length"></i><span>{{ book.Lente }}</span></li>
+								<li><i class="icon icon-aperture"></i><span>{{ book.Apertura }}</span></li>
+								<li><i class="icon icon-exposure_time"></i><span>{{ book.Velocidad }}</span></li>
+								<li><i class="icon icon-iso"></i><span>{{ book.Iso }}</span></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type3/2.jpg" alt="img02" />
-					<h3 class="item__title">Brunch vegan pickled cred <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type3/3.jpg" alt="img03" />
-					<h3 class="item__title">Blog dreamcatcher squid  <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type3/4.jpg" alt="img04" />
-					<h3 class="item__title">Migas intelligentsia meh <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type3/5.jpg" alt="img05" />
-					<h3 class="item__title">Authentic locavore meditation <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-					<p>Images by <a href="https://www.flickr.com/photos/56218409@N03/">Matthias Ripp</a></p>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
+
+
 		<div class="stack">
-			<h2 class="stack-title"><a href="#" data-text="Miscellaneous"><span>Infantiles</span></a></h2>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type2/1.jpg" alt="img01" />
-					<h3 class="item__title">Chambray fingerstache <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
+			<h2 class="stack-title"><a href="#" data-text="Miscellaneous"><span>Miscellaneous</span></a></h2>
+
+			{% for Mis in Miscel %}
+				
+				<div class="item">
+					<div class="item__content">
+						<img src=" {{ Mis.archivo }} " alt="img01" />
+						<h3 class="item__title">{{ Mis.titulo }}<span class="item__date">{{ Mis.fecha_subida }}</span></h3>
+						<div class="item__details">
+							<ul>
+								<li><i class="icon icon-camera"></i><span>{{ Mis.Modelo }}</span></li>
+								<li><i class="icon icon-focal_length"></i><span>{{ Mis.Lente }}</span></li>
+								<li><i class="icon icon-aperture"></i><span>{{ Mis.Apertura }}</span></li>
+								<li><i class="icon icon-exposure_time"></i><span>{{ Mis.Velocidad }}</span></li>
+								<li><i class="icon icon-iso"></i><span>{{ Mis.Iso }}</span></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type2/2.jpg" alt="img02" />
-					<h3 class="item__title">Chia pop-up meh <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type2/3.jpg" alt="img03" />
-					<h3 class="item__title">Butcher organic ennui <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type2/4.jpg" alt="img04" />
-					<h3 class="item__title">Four loko slow-carb Austin <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type2/5.jpg" alt="img05" />
-					<h3 class="item__title">Biodiesel freegan cardigan <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-					<p>Images by <a href="https://www.flickr.com/photos/deanhochman/">Dean Hochman</a></p>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
+
+
 		<div class="stack">
-			<h2 class="stack-title"><a href="#" data-text="Wildlife"><span>Miscellaneous</span></a></h2>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type4/1.jpg" alt="img01" />
-					<h3 class="item__title">Kickstarter keffiyeh <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
+			<h2 class="stack-title"><a href="#" data-text="Infantiles"><span>Infantiles</span></a></h2>
+			{% for Infan in Infantiles %}
+				
+				<div class="item">
+					<div class="item__content">
+						<img src=" {{ Infan.archivo }} " alt="img01" />
+						<h3 class="item__title">{{ Infan.titulo }}<span class="item__date">{{ Infan.fecha_subida }}</span></h3>
+						<div class="item__details">
+							<ul>
+								<li><i class="icon icon-camera"></i><span>{{ Infan.Modelo }}</span></li>
+								<li><i class="icon icon-focal_length"></i><span>{{ Infan.Lente }}</span></li>
+								<li><i class="icon icon-aperture"></i><span>{{ Infan.Apertura }}</span></li>
+								<li><i class="icon icon-exposure_time"></i><span>{{ Infan.Velocidad }}</span></li>
+								<li><i class="icon icon-iso"></i><span>{{ Infan.Iso }}</span></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type4/2.jpg" alt="img02" />
-					<h3 class="item__title">Heirloom commodo migas <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type4/3.jpg" alt="img03" />
-					<h3 class="item__title">Austin banjo swag <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type4/4.jpg" alt="img04" />
-					<h3 class="item__title">Small batch farm-to-table <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="item__content">
-					<img src="../static/img/type4/5.jpg" alt="img05" />
-					<h3 class="item__title">Ethical leggings semiotics <span class="item__date">05/05/2015</span></h3>
-					<div class="item__details">
-						<ul>
-							<li><i class="icon icon-camera"></i><span>Canon PowerShot S95</span></li>
-							<li><i class="icon icon-focal_length"></i><span>22.5 mm</span></li>
-							<li><i class="icon icon-aperture"></i><span>&fnof;/5.6</span></li>
-							<li><i class="icon icon-exposure_time"></i><span>1/1000</span></li>
-							<li><i class="icon icon-iso"></i><span>80</span></li>
-						</ul>
-					</div>
-					<p>Images by <a href="https://www.flickr.com/photos/usfwsendsp/">USFWS Endangered Species</a></p>
-				</div>
-			</div>
+			{% endfor %}
 		</div>
+
 	</div>
 	<!-- /stacks-wrapper -->
 </div>
