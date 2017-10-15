@@ -39,7 +39,7 @@ def index_contacto(request):
             from_email = form.cleaned_data['Email']
             message = form.cleaned_data['Mensaje']
             try:
-                send_mail(subject, message, from_email, ['glasalviacalio@gmail.com'], fail_silently=False)
+                send_mail(subject, message, from_email, ['fiorellagiuntiph@gmail.com'], fail_silently=False)
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')
