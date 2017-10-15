@@ -1,0 +1,21 @@
+
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+	<div class="container" style="position: absolute;right: 35%;left: 35%; margin-top: 10%;width: 100%; height: 100px;">
+			<div class="hero__back hero__back--static"></div>
+			<div class="hero__back hero__back--mover"></div>
+			<div class="hero__front"></div>
+		<h1>Contacto</h1>
+		<form method="post">
+		    {% csrf_token %}
+		    {{ form.as_p }}
+		    <div class="form-actions">
+		      <button type="submit">Enviar</button>
+		    </div>
+		</form>
+
+	</div>
+
+{% endblock %}
