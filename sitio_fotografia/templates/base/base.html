@@ -20,6 +20,7 @@
 
 </head>
 <body>
+
 	<div class="container">
 		<div class="hero">
 			<div class="hero__back hero__back--static"></div>
@@ -49,23 +50,32 @@
 			<h1 class="codrops-title">Fiorella Giunti <span>Fotografia</span></h1>
 			<nav class="menu">
 				<!-- <a class="menu__item" href="{% url 'sobre_mi' %}"><span>Sobre mi</span></a> -->
-				<a class="menu__item" href="{% url 'index' %}"><span>Trabajos</span></a>
-				<a class="menu__item" href="{% url 'contacto' %}"><span>Contacto</span></a>
+				<a id="menu_1" class="menu__item" href="{% url 'index' %}"><span>Trabajos</span></a>
+				<a id="menu_2" class="menu__item" href="{% url 'contacto' %}"><span>Contacto</span></a>
 			</nav>
 		</header>
+		
 		{% endblock %}
-
+		
 		{% block content %}
 		{% endblock %}
 
+
+
 		<!-- /stacks -->
-		
+		<img class="loader" src="{% static 'img/three-dots.svg' %}" width="60" alt="Loader image" />
 	</div>
 	<!-- /container -->
 
-	<!-- <img class="loader" src="{% static 'img/three-dots.svg' %}" width="60" alt="Loader image" />-->
+	
 	<script src="{% static 'js/flickity.pkgd.min.js' %}"></script>
 	<script src="{% static 'js/smoothscroll.js' %}"></script>
 	<script src="{% static 'js/main.js' %}"></script>
+	<script src="{% static 'js/jquery-3.2.1.js' %}"></script>
+
+	{% block js %}
+	{% endblock %}
+
+</body>
 </body>
 </html>
