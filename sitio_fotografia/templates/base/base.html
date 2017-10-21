@@ -3,12 +3,13 @@
 <!DOCTYPE html>
 <html lang="es" class="no-js">
 <head>
+
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Fiorella Giunti Fotografia</title>
 	<meta name="description" content="Sitio de fotografia de Fiorella Carolina Giunti" />
-	<meta name="keywords" content="photography, template, layout, effect, expand, image stack, animation, flickity, tilt, Fotografia, eventos, Fiorella, Giunti, imagenes" />
+	<meta name="keywords" content="photography, fotografia, events, eventos, fiorella, giunti, images, imagenes" />
 	<meta name="author" content="glasalviacalio@gmail.com" />
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}"/>
@@ -17,7 +18,6 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/sitio.css' %}"/>
 	<script src="{% static 'js/modernizr.custom.js' %}"></script>
 	
-
 </head>
 <body>
 
@@ -30,7 +30,6 @@
 		
 		 {% block navbar %}
 		<header class="codrops-header">
-
 
 			<div class="codrops-links">
 				<div class="row">
@@ -47,12 +46,14 @@
 				</div>
 			</div>
 
-			<h1 class="codrops-title">Fiorella Giunti <span>Fotografia</span></h1>
-			<nav class="menu">
-				<!-- <a class="menu__item" href="{% url 'sobre_mi' %}"><span>Sobre mi</span></a> -->
-				<a id="menu_1" class="menu__item" href="{% url 'index' %}"><span>Trabajos</span></a>
-				<a id="menu_2" class="menu__item" href="{% url 'contacto' %}"><span>Contacto</span></a>
-			</nav>
+			<h1 class="codrops-title">Fiorella Giunti <span>PH</span></h1>
+
+			<div class="topnav" id="myTopnav">
+			  <a id="menu_1" href="{% url 'index' %}" class="menu__item">Galeria</a>
+			  <a id="menu_2" href="{% url 'contacto' %}" class="menu__item">Contacto</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			</div>
+
 		</header>
 		
 		{% endblock %}
@@ -60,13 +61,8 @@
 		{% block content %}
 		{% endblock %}
 
-
-
-		<!-- /stacks -->
-		<img class="loader" src="{% static 'img/three-dots.svg' %}" width="60" alt="Loader image" />
+		<!--<img class="loader" src="{% static 'img/three-dots.svg' %}" width="60" alt="Loader image" />-->
 	</div>
-	<!-- /container -->
-
 	
 	<script src="{% static 'js/flickity.pkgd.min.js' %}"></script>
 	<script src="{% static 'js/smoothscroll.js' %}"></script>
