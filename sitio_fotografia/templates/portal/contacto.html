@@ -1,20 +1,14 @@
-
 {% extends 'base/base.html' %}
-
 {% block content %}
 
-		<div id="contact-form" style=" width:70%;display:inherit;margin-top:10%">
-			<div style="width:45%;margin-right:10%">
-
-				<h1>Un placer conocerte!</h1>
-            <br> 
+		<div id="contact-form">
+			
+			<div id ="texto" class="texto">
+			
 				<h4>Dejá tu mensaje y a la brevedad me pongo en contacto con vos.</h4>
-            <br>
-            <h4>Telefono: 15-6642-8131</h4>
-            <h4>Mail: fiorellagiuntiph@gmail.com</h4>
-            <h4 style="margin: 0 0 0 0;"><a href="https://www.facebook.com/fiorellagiuntifotografia/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>Facebook</h4>
-            <h4 style="margin: 0 0 0 0;"><a href="https://www.instagram.com/fiorellagiuntifotografia/" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>Instagram</h4>
-            
+	            <h4>Telefono: 15-6642-8131</h4>
+	            <h4>Mail: fiorellagiuntiph@gmail.com</h4>
+
 			</div>
 
 			<form method="post">
@@ -24,10 +18,10 @@
 			      <button type="submit">Enviar</button>
 			    </div>
 			</form>
-
-       </div>
+        </div>
 
 {% endblock %}
+
 
 {% block js %}
 
@@ -36,6 +30,15 @@
 		    $( document ).ready(function() {
 		     $('#menu_2').addClass("menu__item--current ");
 		    });
+
+			function myFunction() {
+			    var x = document.getElementById("myTopnav");
+			    if (x.className === "topnav") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "topnav";
+			    }
+			}
 
 	</script>
 
