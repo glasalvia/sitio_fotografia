@@ -75,7 +75,7 @@
 
 	function initEvents() {
 		stacks.forEach(function(stack) {
-			var titleEl = stack.querySelector('.stack');
+			var titleEl = stack.querySelector('.stack-title','stack');
 
 			// expand/close the stack
 			titleEl.addEventListener('click', function(ev) {
