@@ -5,7 +5,8 @@
 <div class="stack-slider">
 	<div class="stacks-wrapper">
 		<div class="stack">
-			<h2 class="stack-title"><a href="#" data-text="Eventos"><span>Eventos</span></a></h2>
+
+			<h2 class="stack-title"><a data-text="Eventos"><span>Eventos</span></a></h2>
 
 			{% for evento in Eventos %}
 				<div class="item">
@@ -28,7 +29,7 @@
 
 
 		<div class="stack">
-			<h2 class="stack-title"><a href="#" data-text="Books"><span>Books</span></a></h2>
+			<h2 class="stack-title"><a data-text="Books"><span>Books</span></a></h2>
 
 			{% for book in Books %}
 
@@ -52,7 +53,7 @@
 
 
 		<div class="stack">
-			<h2 class="stack-title"><a href="#" data-text="Miscellaneous"><span>Miscellaneous</span></a></h2>
+			<h2 class="stack-title"><a data-text="Miscellaneous"><span>Miscellaneous</span></a></h2>
 
 			{% for Mis in Miscel %}
 				
@@ -76,7 +77,7 @@
 
 
 		<div class="stack">
-			<h2 class="stack-title"><a href="#" data-text="Infantiles"><span>Infantiles</span></a></h2>
+			<h2 class="stack-title"><a data-text="Infantiles"><span>Infantiles</span></a></h2>
 			{% for Infan in Infantiles %}
 				
 				<div class="item">
@@ -110,6 +111,16 @@
 	    $( document ).ready(function() {
 	     $('#menu_1').addClass("menu__item--current ");
 	    });
+
+
+		function myFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
 
 
 	</script>
