@@ -10,6 +10,7 @@
  */
 (function() {
 
+
 	var bodyEl = document.body,
 		docElem = window.document.documentElement,
 		support = { transitions: Modernizr.csstransitions },
@@ -74,7 +75,7 @@
 
 	function initEvents() {
 		stacks.forEach(function(stack) {
-			var titleEl = stack.querySelector('.stack-title');
+			var titleEl = stack.querySelector('.stack');
 
 			// expand/close the stack
 			titleEl.addEventListener('click', function(ev) {
