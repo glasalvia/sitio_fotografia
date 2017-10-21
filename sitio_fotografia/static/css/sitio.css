@@ -1,5 +1,6 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
+
 a.btn-social,
 .btn-social
 {
@@ -75,13 +76,11 @@ h4{
    background-color:rgba(72,72,72,0.7);
    padding: 10px 20px 30px 20px;
    max-width:100%;
-   float: left;
-   /*left: 50%;*/
-   position: absolute;
-   margin-top:5%;
-  /* margin-top:50px;*/
-  /* margin-left: -260px;*/
-   margin-left: 15%;
+   top: 50%;
+   left: 50%;
+   /* bring your own prefixes */
+   transform: translate(-50%, -50%);
+   position: fixed;
    border-radius:7px;
    -webkit-border-radius:7px;
    -moz-border-radius:7px;
@@ -158,13 +157,17 @@ input:required, textarea:required {
 }
 
 /* Make form look nice on smaller screens */
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 700px) {
    #contact-form{
-      left: 3%;
+      /*left: 3%;*/
       margin-right: 3%;
       width: 88%;
       margin-left: 0;
       padding-left: 3%;
       padding-right: 3%;
+      height: 70%;
    }
+   #texto{display: none!important;}
 }
+
+
