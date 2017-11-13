@@ -84,6 +84,7 @@ h4{
    border-radius:7px;
    -webkit-border-radius:7px;
    -moz-border-radius:7px;
+
 }
 #contact-form input,   
 #contact-form select,   
@@ -168,6 +169,7 @@ input:required, textarea:required {
       height: 70%;
    }
    #texto{display: none!important;}
+   #firma{display: none!important;}
 }
 
 

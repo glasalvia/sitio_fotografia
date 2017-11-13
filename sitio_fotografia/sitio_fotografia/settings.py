@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'apps.portal',
     'apps.equipo',
     'apps.albums',
+    'apps.api',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

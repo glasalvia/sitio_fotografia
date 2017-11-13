@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/sitio.css' %}"/>
 	<script src="{% static 'js/modernizr.custom.js' %}"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 </head>
 <body>
@@ -46,7 +47,11 @@
 				</div>
 			</div>
 
-			<h1 class="codrops-title">Fiorella Giunti <span>PH</span></h1>
+			<h1 class="" >
+				<a href="{% url 'index' %}">
+				<img id="firma" class="firma"  src="{% static 'img/firma.png' %}" alt="Fiorella Giunti Fotografia">
+				</a>
+			</h1>
 
 			<div class="topnav" id="myTopnav">
 			  <a id="menu_1" href="{% url 'index' %}" class="menu__item">Galeria</a>
